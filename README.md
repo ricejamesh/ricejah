@@ -1,4 +1,5 @@
 # ricejah
+Initial version.
 
 ## Project setup
 ```
