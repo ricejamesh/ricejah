@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "build-github": "vue-cli-service build --mode github",
+    "build": "npm-run-all build:prod build:github",
+    "build:prod": "vue-cli-service build",
+    "build:github": "vue-cli-service build --mode github",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "deploy": "git subtree push --prefix dist origin gh-pages"
+    "deploy-github": "git subtree push --prefix gh-pages origin gh-pages"
   },
   "dependencies": {
     "vue": "^2.5.17",
