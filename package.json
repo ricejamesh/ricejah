@@ -8,7 +8,8 @@
     "build-github": "vue-cli-service build --mode github",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e"
+    "test:e2e": "vue-cli-service test:e2e",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "vue": "^2.5.17",
